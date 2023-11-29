@@ -14,6 +14,6 @@ export const cards = createSlice({
     }
 })
 
-export const cardsSelector = (state) => state.cards.cards.find;
+export const cardsSelector = (id)=>(state) => state.cards.cards[id];
 export const {addCard} = cards.actions;
 export default cards.reducer;
